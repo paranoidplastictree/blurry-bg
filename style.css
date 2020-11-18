@@ -1,0 +1,76 @@
+.box {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 1; 
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+input {
+  height: 70px;
+  width: 600px;
+  padding: 20px;
+  margin: 20px 0px;
+  color: #333;
+  outline: none;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  font: 'italic';
+}
+
+.help {
+  width: 502px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 30px;
+  background-color: #333;
+  opacity: 0.7;
+  border-radius: 6px;
+  color: #cacaca;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.key-combo-list {
+  margin: 0 auto;
+}
+
+.key-combo, .description {
+  display: flex;
+}
+
+.key-combo {
+  padding-right: 10px;
+  width: 140px;
+}
+
+.key-combo::after {
+  content: ": "
+}
