@@ -108,6 +108,7 @@ let map = {};
 
 		let url = urlList[imageIndex];
 		updateBackground(url);
+		showInput();
 	}
 	
 })(window, document, undefined);
