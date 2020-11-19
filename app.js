@@ -1,6 +1,7 @@
 function checkKey(e) {
     e = e || event; // I hate you, IE
-	map[e.keyCode] = e.type == 'keydown';
+	// map[e.keyCode] = e.type == 'keydown';
+	map[e.which] = e.type == 'keydown';
 
 	if (map[17] && map[38]) { // ctrl + up arrow
 		incrementBlur(1);
